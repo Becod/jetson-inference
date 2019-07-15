@@ -598,7 +598,7 @@ static PyObject* PyDetectNet_Detect( PyDetectNet_Object* self, PyObject* args, P
 	// run the object detection
 	detectNet::Detection* detections = NULL;
 
-	const int numDetections = self->net->Detect((float*)img, width, height, &detections, overlay > 0 ? detectNet::OVERLAY_BOX/*|detectNet::OVERLAY_LABEL*/ : detectNet::OVERLAY_NONE);
+	const int numDetections = self->net->Detect((float*)img, width, height, &detections, overlay); // > 0 ? detectNet::OVERLAY_BOX/*|detectNet::OVERLAY_LABEL*/ : detectNet::OVERLAY_NONE);
 
 	if( numDetections < 0 )
 	{
