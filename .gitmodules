@@ -1,6 +1,6 @@
 [submodule "utils"]
 	path = utils
-url=https://github.com/Becod/jetson-utils
+	url=git@github.com:Becod/jetson-utils
 	branch = master
 [submodule "python/training/imagenet"]
 	path = python/training/imagenet
